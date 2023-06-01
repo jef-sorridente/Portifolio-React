@@ -1,0 +1,40 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
+}
+
+.title {
+  color: var(--color-1);
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.btn-portfolio{
+  background-color: var(--bg-color-1);
+  width: 330px;
+  margin: auto;
+  display: flex;
+  cursor: pointer;
+  clip-path: polygon(0 0, 92% 0, 100% 100%, 0% 100%);
+}
+
+.btn-portfolio span{
+  background-color: var(--bg-color-2);
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  width: 50px;
+  height: 40px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.btn-portfolio span svg{
+  font-size: 1.8rem;
+}
+
+.btn-portfolio p {
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin: auto 15px;
+}

@@ -1,0 +1,9 @@
+body{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav, .navbar-left, .main, .projetcts{
+  padding: 2.5rem 2.5rem 0 2.5rem;
+}
