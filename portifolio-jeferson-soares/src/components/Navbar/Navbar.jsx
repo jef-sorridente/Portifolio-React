@@ -8,18 +8,18 @@ const Navbar = () => {
     <nav className="nav">
       <h1 className="icon">JS</h1>
       <ul className="ul-about">
-        <div>
-          <li>Sobre Mim</li>
-          <span className="pipe"></span>
-        </div>
-        <div>
-          <li>Projetos</li>
-          <span className="pipe"></span>
-        </div>
-        <div>
-          <li>Conexões</li>
-          <span className="pipe"></span>
-        </div>
+        <li>
+          <p>Sobre Mim</p>
+          <span className="line"></span>
+        </li>
+        <li>
+          <p>Projetos</p>
+          <span className="line"></span>
+        </li>
+        <li>
+          <p>Conexões</p>
+          <span className="line"></span>
+        </li>
       </ul>
     </nav>
   );
