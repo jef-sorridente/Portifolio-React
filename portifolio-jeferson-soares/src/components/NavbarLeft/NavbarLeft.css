@@ -2,18 +2,30 @@
   position: fixed;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  height: 87vh;
-  width: 0px;
-  background: #20202078;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100px;
+  background: #2020206f;
+}
+.icon {
+  margin-top: 2.5rem;
+}
+.navbar-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  height: 100vh;
 }
 .pipe {
-  width: 10vw;
-  height: 0px;
+  width: 0;
+  height: 100%;
   border: 3px solid #ffee32;
   border-radius: 25px;
-  transform: rotate(90deg);
 }
 
 .ul-navbar-left {
@@ -36,4 +48,13 @@
 .ul-navbar-left li a:hover {
   transition: 0.5s;
   color: var(--color-2);
+}
+
+.ul-navbar-left li a svg {
+  transition: 0.5s;
+}
+
+.ul-navbar-left li a svg:hover {
+  transform:scale(1.5);
+  transition: 0.5s;
 }

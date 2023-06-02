@@ -1,7 +1,8 @@
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content:end;
   align-items: center;
+  height: 3rem;
 }
 
 .icon {
@@ -12,7 +13,6 @@
 }
 
 .ul-about {
-  color: var(--color-1);
   font-size: 1.5rem;
   font-weight: 200;
   list-style: none;
@@ -32,6 +32,11 @@
 
 .ul-about li p {
   margin: 0;
+}
+
+.ul-about li a {
+  text-decoration: none;
+  color: var(--color-1);
 }
 
 .line {

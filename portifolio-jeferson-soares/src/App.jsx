@@ -8,7 +8,7 @@ import NavbarLeft from "./components/NavbarLeft/NavbarLeft";
 import Projects from "./components/Projects/Projects";
 import About from "./components/About/About";
 import Footer from "./components/Footer/Footer";
-
+import Teste from "./components/Teste/Teste";
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
       <Navbar />
       <NavbarLeft />
       <Main />
+      <Teste />
       <Projects />
       <About />
       <Footer />

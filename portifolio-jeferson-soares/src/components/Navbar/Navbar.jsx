@@ -6,18 +6,17 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <nav className="nav">
-      <h1 className="icon">JS</h1>
       <ul className="ul-about">
         <li>
-          <p>Sobre Mim</p>
+          <p><a href="#about">Sobre Mim</a></p>
           <span className="line"></span>
         </li>
         <li>
-          <p>Projetos</p>
+          <p><a href="#project">Projetos</a></p>
           <span className="line"></span>
         </li>
         <li>
-          <p>Conexões</p>
+          <p><a href="#conections">Conexões</a></p>
           <span className="line"></span>
         </li>
       </ul>

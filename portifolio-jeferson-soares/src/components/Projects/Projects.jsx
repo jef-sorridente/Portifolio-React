@@ -5,7 +5,7 @@ import { AiOutlineArrowsAlt } from "react-icons/ai";
 
 const Projects = () => {
   return (
-    <div className="projects">
+    <div className="projects" id="project">
       <div className="projects-item">
         <div className="projects-container">
           <div className="projects-title">

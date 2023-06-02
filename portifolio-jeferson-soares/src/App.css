@@ -1,9 +1,10 @@
-body{
+*{
   margin:0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-.nav, .navbar-left, .main, .projetcts{
+.nav, .main, .projetcts{
   padding: 2.5rem 2.5rem 0 2.5rem;
 }

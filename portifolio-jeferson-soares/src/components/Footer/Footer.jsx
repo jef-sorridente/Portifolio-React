@@ -10,7 +10,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer" id="conections">
       <div className="conections">
         <h2>Conexões</h2>
         <div className="conections-item">
