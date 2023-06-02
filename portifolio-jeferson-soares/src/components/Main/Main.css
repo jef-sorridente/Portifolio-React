@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 15%;
+  margin-top: 13rem;
 }
 
 .title {
@@ -11,7 +11,7 @@
   font-weight: 400;
 }
 
-.btn-portfolio{
+.btn-portfolio {
   background-color: var(--bg-color-1);
   width: 330px;
   margin: auto;
@@ -20,7 +20,7 @@
   clip-path: polygon(0 0, 92% 0, 100% 100%, 0% 100%);
 }
 
-.btn-portfolio span{
+.btn-portfolio span {
   background-color: var(--bg-color-2);
   display: flex;
   justify-content: center;
@@ -29,7 +29,7 @@
   height: 40px;
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
-.btn-portfolio span svg{
+.btn-portfolio span svg {
   font-size: 1.8rem;
 }
 
