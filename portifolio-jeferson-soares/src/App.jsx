@@ -16,7 +16,6 @@ function App() {
       <Navbar />
       <NavbarLeft />
       <Main />
-      <Teste />
       <Projects />
       <About />
       <Footer />
