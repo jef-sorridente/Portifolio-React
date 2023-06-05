@@ -1,14 +1,12 @@
 import "./Projects.css";
 
 // Icons
-import { AiOutlineArrowsAlt } from "react-icons/ai";
+import { AiOutlineArrowsAlt, AiOutlineClose } from "react-icons/ai";
 
 //Hooks
 import { useState } from "react";
 
 const Projects = () => {
-  const [expandedIndex, setExpandedIndex] = useState(null);
-
   const arrayProjects = [
     {
       id: 1,
@@ -59,34 +57,63 @@ const Projects = () => {
     },
   ];
 
-  const handleExpand = (index) => {
-    setExpandedIndex(index === expandedIndex ? null : index);
+  const [expandedItemId, setExpandedItemId] = useState(null);
+
+  const handleExpand = (item) => {
+    if (expandedItemId === item.id) {
+      // Se o item já estiver expandido, clique novamente para fechá-lo
+      setExpandedItemId(null);
+    } else {
+      // Se o item estiver fechado, clique para expandi-lo
+      setExpandedItemId(item.id);
+    }
   };
+
   return (
     <div className="projects" id="project">
-      {arrayProjects.map((item, index) => (
-        <div
-          key={item.id}
-          className={`item ${
-            expandedIndex === index ? "projects-item-expanded" : "projects-item"
-          }`}
-        >
+      {arrayProjects.map((item) => (
+        <div key={item.id} className={"projects-item"}>
           <div className="projects-container">
             <div className="projects-title">
               <h3>{item.title}</h3>
-              <AiOutlineArrowsAlt onClick={() => handleExpand(index)} />
+              <AiOutlineArrowsAlt onClick={() => handleExpand(item)} />
             </div>
             <div className="project-img">Imagem</div>
-            {expandedIndex === index && (
-              <>
-                <div className="teste">{item.subtitle}</div>
-                <h3>Sobre o Projeto</h3>
-                <div>
-                  <p>{item.content}</p>
-                </div>
-              </>
-            )}
           </div>
+          {expandedItemId === item.id && (
+            <div className="background">
+              <div className="project-details">
+                <div className="project-details-title">
+                  <h3>{item.title}</h3>
+                  <AiOutlineClose onClick={() => handleExpand(item)} />
+                </div>
+                <div className="project-details-content">
+                  <div className="project-image">
+                    <p>IMG 1</p>
+                    <p>IMG 2</p>
+                    <p>IMG 3</p>
+                  </div>
+                  <div className="project-about">
+                    <h3>Sobre o Projeto</h3>
+                    <div className="project-about-text">
+                      <p>{item.content}</p>
+                    </div>
+                    <h3>Linguagens Utilizadas</h3>
+                    <div className="project-about-language">
+                      <p>ICON</p>
+                      <p>ICON</p>
+                      <p>ICON</p>
+                      <p>ICON</p>
+                    </div>
+                    <h3>Acesse esse projeto!</h3>
+                    <div className="project-about-link">
+                      <a href="">link-do-projeto</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       ))}
     </div>
