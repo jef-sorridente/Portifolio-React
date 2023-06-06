@@ -18,6 +18,8 @@
   display: flex;
   cursor: pointer;
   clip-path: polygon(0 0, 92% 0, 100% 100%, 0% 100%);
+  text-decoration: none;
+  color: var(--color-3);
 }
 
 .btn-portfolio span {
@@ -29,6 +31,21 @@
   height: 40px;
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
+
+.btn-portfolio span svg {
+  animation: arrow-anim 1s infinite cubic-bezier(0.95, 0.05, 0.795, 0.035)
+    alternate;
+}
+
+@keyframes arrow-anim {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(3px);
+  }
+}
+
 .btn-portfolio span svg {
   font-size: 1.8rem;
 }
@@ -37,4 +54,16 @@
   font-weight: 500;
   font-size: 1.3rem;
   margin: auto 15px;
+}
+
+@media (max-width: 1330px) {
+  .main {
+    height: 100vh ;
+  }
+}
+
+@media (max-width: 810px) {
+  .main {
+    height: 105vh;
+  }
 }

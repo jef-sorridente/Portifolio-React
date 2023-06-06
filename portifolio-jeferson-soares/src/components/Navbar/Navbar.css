@@ -59,3 +59,9 @@
   opacity: 100%;
   transition: 0.5s;
 }
+
+@media (max-width: 810px) {
+  .nav {
+    display: none;
+  }
+}

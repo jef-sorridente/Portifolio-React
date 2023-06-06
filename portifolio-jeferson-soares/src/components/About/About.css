@@ -1,11 +1,14 @@
 .about {
   margin-top: 30rem;
-  padding: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: var(--bg-color-2);
+}
+
+.about h2 {
+  margin: 100px 0;
 }
 
 .about p {
@@ -15,4 +18,30 @@
   font-size: 1.2rem;
   margin: 0 10em 5em 10em;
   padding: 5em;
+}
+
+.about-container {
+  width: 100%;
+  margin: 0 200px;
+}
+
+@media (max-width: 1330px) {
+  .about p {
+    margin: 120px;
+  }
+}
+@media (max-width: 810px) {
+  .about p {
+    margin: 50px;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .about h2{
+    margin-bottom: 50px;
+  }
+  .about p {
+    margin: 50px 20px;
+  }
 }

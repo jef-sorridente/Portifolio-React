@@ -12,7 +12,7 @@
 
 .projects-item {
   width: 30%;
-  height: 300px;
+  height: 100%;
   background-color: var(--bg-color-4);
   transition: 1s;
 }
@@ -194,4 +194,41 @@
 
 .modal-open {
   overflow: hidden;
+}
+
+@media (max-width: 1330px) {
+  .projects {
+    margin: 0 120px;
+  }
+  .about p {
+    margin: 120px;
+  }
+  .project-details-title h3,
+  .project-about h3 {
+    font-size: 1.2rem;
+  }
+  .project-about-text {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .project-about-language {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 810px) {
+  .projects {
+    margin: 0 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects{
+    margin: 0 20px;
+  }
+  
+  .projects-item{
+    width: 100%;
+  }
 }
