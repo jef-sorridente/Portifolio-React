@@ -224,11 +224,29 @@
 }
 
 @media (max-width: 600px) {
-  .projects{
+  .projects {
     margin: 0 20px;
   }
-  
-  .projects-item{
+
+  .projects-item {
     width: 100%;
+  }
+  .project-details-content {
+    flex-direction: column;
+  }
+  .project-image {
+    width: 75%;
+  }
+  .project-about {
+    width: 90%;
+  }
+  .project-about-language {
+    transform: scale(0.8);
+  }
+  .project-details-title {
+    justify-content: space-evenly;
+  }
+  .project-details-content h3{
+    margin: 10px 0;
   }
 }
