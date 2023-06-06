@@ -5,6 +5,12 @@
   height: 3rem;
 }
 
+.nav-top {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
 .icon {
   color: var(--color-1);
   font-size: 3rem;
@@ -60,8 +66,47 @@
   transition: 0.5s;
 }
 
+.icon-top,
+.icon-menu {
+  color: var(--color-1);
+  font-size: 3rem;
+  font-weight: 500;
+  margin-left: 0 10px;
+  display: none;
+  margin: 0 25px;
+}
+
+.icon-menu {
+  font-size: 70px;
+}
+.pipe-top {
+  width: 100%;
+  margin: 0 25px;
+  height: 0;
+  border: 3px solid #ffee32;
+  border-radius: 25px;
+  display: none;
+}
+
 @media (max-width: 810px) {
   .nav {
     display: none;
+  }
+  .icon-top,
+  .pipe-top,
+  .icon-menu {
+    display: block;
+  }
+  .nav-top {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .icon-top {
+    font-size: 40px;
+  }
+  .icon-menu {
+    font-size: 90px;
   }
 }

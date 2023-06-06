@@ -18,8 +18,7 @@ const Projects = () => {
       id: 1,
       title: "MiniBlog React",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec arcu eu elit venenatis suscipit feugiat nec neque." +
-        "Nam nec urna dui. Phasellus id sagittis velit. Curabitur diam elit, sagittis placerat ultrices in, volutpat id dolor.",
+        "Este projeto consiste em um blog feito com React no front-end e Firebase no back-end. Projeto criado pelo professor Matheus Battisti. Sendo apresentado na sua aula React do Zero a Maestria c/ hooks, router, API, Projetos da Udemy.",
       imagem1: miniblog_1,
       imagem2: miniblog_2,
       imagem3: miniblog_3,
