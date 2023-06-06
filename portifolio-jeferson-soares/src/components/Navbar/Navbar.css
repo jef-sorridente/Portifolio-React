@@ -1,6 +1,6 @@
 .nav {
   display: flex;
-  justify-content:end;
+  justify-content: end;
   align-items: center;
   height: 3rem;
 }
@@ -48,7 +48,7 @@
   transition: 0.5s;
 }
 
-.ul-about li p:hover {
+.ul-about li p a:hover {
   color: var(--color-2);
   transition: 0.5s;
 }

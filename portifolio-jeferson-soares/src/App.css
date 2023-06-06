@@ -1,10 +1,27 @@
-*{
-  margin:0;
+* {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--bg-color-1);
+  }
 }
 
-.nav, .main, .projetcts{
+.nav,
+.main,
+.projetcts {
   padding: 2.5rem 2.5rem 0 2.5rem;
 }
