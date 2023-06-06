@@ -36,7 +36,6 @@
   width: 100vw;
   height: 100vh;
   background-color: #20202065;
-  padding: 5%;
   animation: toogle-left 1s ease-in-out;
   overflow: hidden;
   z-index: 1;
@@ -193,7 +192,7 @@
 }
 
 .project-about-link {
-  margin: 20px;
+  margin-bottom: 70px;
 }
 
 .project-about-link a {
@@ -281,14 +280,15 @@
     margin: 10px 0;
   }
   .project-details {
-    padding: 1rem;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    padding: 0;
   }
   .project-details h3 {
     font-size: 18px;
   }
   .project-details p {
-    font-size: 14px;
+    font-size: 16px;
+  }
+  .background {
+    padding: 0;
   }
 }
