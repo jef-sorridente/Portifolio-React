@@ -192,8 +192,11 @@
   color: aliceblue;
 }
 
+.project-about-link {
+  margin: 20px;
+}
+
 .project-about-link a {
-  margin: 10px;
   color: var(--color-1);
   background-color: var(--bg-color-5);
   padding: 10px;
@@ -279,6 +282,8 @@
   }
   .project-details {
     padding: 1rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
   }
   .project-details h3 {
     font-size: 18px;
