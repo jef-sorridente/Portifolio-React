@@ -11,6 +11,7 @@ import { useState } from "react";
 import miniblog_1 from "../../Images/MiniBlog-1.jpg";
 import miniblog_3 from "../../Images/MiniBlog-2.jpg";
 import miniblog_2 from "../../Images/MiniBlog-3.jpg";
+import project from "../../Images/project.png";
 
 const Projects = () => {
   const arrayProjects = [
@@ -26,54 +27,36 @@ const Projects = () => {
     {
       id: 2,
       title: "Projeto 2",
-
       content:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec arcu eu elit venenatis suscipit feugiat nec neque." +
         "Nam nec urna dui. Phasellus id sagittis velit. Curabitur diam elit, sagittis placerat ultrices in, volutpat id dolor.",
+      imagem1: project,
+      imagem2: project,
+      imagem3: project,
     },
     {
       id: 3,
       title: "Projeto 3",
-
       content:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec arcu eu elit venenatis suscipit feugiat nec neque." +
         "Nam nec urna dui. Phasellus id sagittis velit. Curabitur diam elit, sagittis placerat ultrices in, volutpat id dolor.",
-    },
-    {
-      id: 4,
-      title: "Projeto 4",
-
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec arcu eu elit venenatis suscipit feugiat nec neque." +
-        "Nam nec urna dui. Phasellus id sagittis velit. Curabitur diam elit, sagittis placerat ultrices in, volutpat id dolor.",
-    },
-    {
-      id: 5,
-      title: "Projeto 5",
-
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec arcu eu elit venenatis suscipit feugiat nec neque." +
-        "Nam nec urna dui. Phasellus id sagittis velit. Curabitur diam elit, sagittis placerat ultrices in, volutpat id dolor.",
-    },
-    {
-      id: 6,
-      title: "Projeto 6",
-
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec arcu eu elit venenatis suscipit feugiat nec neque." +
-        "Nam nec urna dui. Phasellus id sagittis velit. Curabitur diam elit, sagittis placerat ultrices in, volutpat id dolor.",
+      imagem1: project,
+      imagem2: project,
+      imagem3: project,
     },
   ];
 
   const [expandedItemId, setExpandedItemId] = useState(null);
   const [isBackgroundTeste, setIsBackgroundTeste] = useState(false);
 
+  // Abre Projeto
   const handleOpenModal = (item) => {
     setExpandedItemId(item.id);
     document.body.classList.add("modal-open");
     setIsBackgroundTeste(true);
   };
 
+  // Fecha Projeto
   const handleCloseModal = () => {
     setIsBackgroundTeste(false);
     document.body.classList.remove("modal-open");

@@ -2,13 +2,21 @@
   display: flex;
   justify-content: end;
   align-items: center;
-  height: 3rem;
+  height: 200px;
 }
 
 .nav-top {
   display: flex;
   justify-content: end;
   align-items: center;
+  width: 100%;
+}
+
+.nav-top-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .icon {
@@ -88,17 +96,49 @@
   display: none;
 }
 
-@media (max-width: 810px) {
-  .nav {
-    display: none;
+.icon-menu {
+  animation: icon-menu 0.5s forwards;
+}
+
+.appear {
+  position: relative;
+  top: 0 !important;
+  transition: .3s;
+}
+.hide {
+  position: relative;
+  top: -195px;
+  transition: .3s;
+}
+
+@keyframes icon-menu {
+  0% {
+    opacity: 0;
   }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@media (max-width: 810px) {
   .icon-top,
   .pipe-top,
   .icon-menu {
     display: block;
   }
+  .ul-about{
+    flex-direction: column;
+    
+  }
+  .ul-about li{
+    margin: 10px;
+  }
   .nav-top {
     justify-content: center;
+    flex-direction: column-reverse;
+    position: relative;
+    top: -195px;
+    transition: .3s;
   }
 }
 

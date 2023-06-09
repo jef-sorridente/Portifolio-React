@@ -1,15 +1,39 @@
 import "./Navbar.css";
 
 // Components
-//import { NavLink } from "react-router-dom";
-import { AiOutlineMenu } from "react-icons/ai";
+import { useState } from "react";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const Navbar = () => {
+  const [hideMenu, setHideMenu] = useState(true);
+
+  //Abre Menu
+  const openMenuBar = () => {
+    setHideMenu(true);
+    document.getElementById("nav-top").classList.add("hide");
+    document.getElementById("nav-top").classList.remove("appear");
+    console.log("Clicado");
+  };
+
+  //Fecha Menu
+  const closeMenuBar = () => {
+    setHideMenu(false);
+    document.getElementById("nav-top").classList.remove("hide");
+    document.getElementById("nav-top").classList.add("appear");
+    console.log("Clicado 2");
+  };
   return (
-    <div className="nav-top">
-      <h1 className="icon-top">JS</h1>
-      <span class="pipe-top"></span>
-      <AiOutlineMenu className="icon-menu" />
+    <div className="nav-top" id="nav-top">
+      <div className="nav-top-icons">
+        <h1 className="icon-top">JS</h1>
+        <span className="pipe-top"></span>
+        {hideMenu ? (
+          <AiOutlineMenu className="icon-menu" onClick={closeMenuBar} />
+        ) : (
+          <AiOutlineClose className="icon-menu" onClick={openMenuBar} />
+        )}
+      </div>
+
       <nav className="nav">
         <ul className="ul-about">
           <li>
